@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="https://github.com/bprofiro/assets/blob/master/GOREPOLOGO.png" />
+</p>
+
+<p align="center">
   <img src="https://github.com/bprofiro/assets/blob/master/GOREPODARK.png" />
 </p>
 
