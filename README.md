@@ -6,10 +6,6 @@
   <img src="https://github.com/bprofiro/assets/blob/master/GOREPODARK.png" />
 </p>
 
-<p align="center">
-  <img src="https://github.com/bprofiro/assets/blob/master/GOREPODARK2.png" />
-</p>
-
 ## Sobre o Projeto
 
   Esse projeto foi desenvolvido durante o Bootcamp GoStack, organizada pela Rocketseat.
