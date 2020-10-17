@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
 import Header from '../../components/Header';
+import Input from '../../components/Input';
 
 import api from '../../services/api';
 
-import { Container, CardList, SideBar, RepositoriesList } from './styles';
+import { Container, SideBar, RepositoriesList, CardItem } from './styles';
 
 interface Props {
   toggletheme(): void;
@@ -53,19 +54,19 @@ const Dashboard: React.FC<Props> = ({ toggletheme }) => {
         <SideBar>
           <form onSubmit={heandleAddRepository}>
             <h1>Insira o Repositório:</h1>
-            <input
+            <Input
               type="text"
               placeholder="Title"
               value={title}
               onChange={e => setTitle(e.target.value)}
             />
-            <input
+            <Input
               type="text"
               placeholder="Url"
               value={url}
               onChange={e => setUrl(e.target.value)}
             />
-            <input
+            <Input
               type="text"
               placeholder="Techs"
               value={techs}
@@ -77,7 +78,7 @@ const Dashboard: React.FC<Props> = ({ toggletheme }) => {
 
         <RepositoriesList>
           {repositories.map(repository => (
-            <CardList key={repository.id}>
+            <CardItem key={repository.id}>
               <section>
                 <strong>Nome do repositório:</strong>
                 <span>{repository.title}</span>
@@ -91,7 +92,7 @@ const Dashboard: React.FC<Props> = ({ toggletheme }) => {
                 <strong>Techs:</strong>
                 <span>{repository.techs}</span>
               </section>
-            </CardList>
+            </CardItem>
           ))}
         </RepositoriesList>
       </Container>

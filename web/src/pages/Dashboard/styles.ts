@@ -3,13 +3,16 @@ import { shade } from 'polished';
 
 export const Container = styled.div`
   display: flex;
+  justify-content: center;
+`;
 
+export const SideBar = styled.div`
   form {
     width: 352px;
     display: flex;
     flex-direction: column;
     background: ${props => props.theme.colors.secundary};
-    margin: 55px 32px 174px 120px;
+    margin: 55px 50px;
     padding: 30px 23px 24px;
     border-radius: 8px;
 
@@ -54,21 +57,18 @@ export const Container = styled.div`
   }
 `;
 
-export const SideBar = styled.div``;
-
 export const RepositoriesList = styled.div`
   display: flex;
   flex-direction: column;
 `;
 
-export const CardList = styled.div`
+export const CardItem = styled.div`
   width: 736px;
   height: 178px;
   border-radius: 8px;
   margin-top: 55px;
   margin-bottom: 30px;
   display: flex;
-  justify-content: space-around;
   align-items: space-between;
   background: ${props => props.theme.colors.secundary};
 
@@ -77,6 +77,7 @@ export const CardList = styled.div`
   }
 
   section {
+    margin-left: 40px;
     display: flex;
     flex-direction: column;
 
@@ -98,5 +99,9 @@ export const CardList = styled.div`
         color: ${shade(0.2, '#8B2B96')};
       }
     }
+  }
+
+  & + section {
+    margin-left: 100px;
   }
 `;

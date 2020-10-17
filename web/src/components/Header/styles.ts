@@ -11,6 +11,7 @@ export const Container = styled.div`
   header {
     display: flex;
     align-items: center;
+
     h1 {
       font-size: 45px;
       margin-left: 80px;
