@@ -49,7 +49,7 @@ const Dashboard: React.FC<Props> = ({ toggletheme }) => {
 
   return (
     <>
-      <Header toggletheme={toggletheme} />
+      <Header toggletheme={toggletheme} titlePage="GoRepositories"/>
       <Container>
         <SideBar>
           <form onSubmit={heandleAddRepository}>

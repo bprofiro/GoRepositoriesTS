@@ -8,17 +8,18 @@ import logo from '../../assets/logo.png';
 import { Container } from './styles';
 
 interface Props {
+  titlePage: string;
   toggletheme(): void;
 }
 
-const Header: React.FC<Props> = ({ toggletheme }) => {
+const Header: React.FC<Props> = ({ toggletheme, titlePage }) => {
   const { colors, title } = useContext(ThemeContext);
 
   return (
     <Container>
       <header>
         <img src={logo} alt="GoRepositories" />
-        <h1>GoRepositories</h1>
+        <h1>{titlePage}</h1>
       </header>
 
       <Switch
